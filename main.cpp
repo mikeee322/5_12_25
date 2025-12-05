@@ -14,6 +14,10 @@ namespace topit {
 	struct f_t {
 		p_t aa, bb;
 	};
+	struct Dot: IDrow {
+		p_t begin () const override;
+		p_t next (p_t) const override;
+	};
 }
 bool topit::operator==(p_t a, p_t b) {
 	return a.x == b.x && a.y == b.y;
