@@ -8,7 +8,7 @@ namespace topit {
 	bool operator!=(p_t, p_t);
 	struct IDrow { // next должен когда то вернуть begin (условие программы)
 		virtual p_t begin () const=0; // означает, что я не обязан давать реализацию для этого метода
-		virtual p_t next () const=0;
+		virtual p_t next (p_t) const=0;
 		virtual ~IDrow ();
 	};
 	struct f_t {
